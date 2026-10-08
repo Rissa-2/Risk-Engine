@@ -2,6 +2,10 @@
 
 ### Link: https://www.kaggle.com/datasets/hassan06/nslkdd?resource=download
 
+The NSL-KDD Dataset is a benchmark network intrusion detection dataset created to fix redundancy and bias problems found in the older KDD'99 dataset.\
+This stands for **N**etwork **S**ecurity **L**aboratory **K**nowledge **D**iscovery in **D**atabases.\
+Link: https://technav.ieee.org/topic/nsl-kdd/
+
 | File name | Description |
 |-----------|-------------|
 | KDDTrain+.ARFF | The full NSL-KDD train set with binary labels in ARFF format |
