@@ -1,1 +1,4 @@
 contains automated tests.
+
+Use pytest for testing
+Maybe Jenkins for automation.
