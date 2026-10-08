@@ -1,1 +1,12 @@
-Useful for your senior-project documentation, architecture diagrams, notes, dataset descriptions, and research.
+Commit 1:
+load_data.py:
+    Created file that loads the data from the ARFF datasets.
+    Also added the requirements.txt file to include the required libraries for the project.
+
+Commit 2:
+load_data.py:
+    Added the attributes list so we can test the right catergories. There is only filler attributes in the list,
+    we can add the ones we're actually using later.
+
+Commit 3:
+load
