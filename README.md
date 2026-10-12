@@ -85,8 +85,7 @@ probabilistic-risk-engine/
 ### Install the packages using requirements.txt: 
     pip install -r requirements.txt
     
-The XGBoost package still needs to be installed. \
-*Side note*: If powershell is blocking/disabling the virtual environment from being activated, run this line and then try the steps again:
+*Windows Side note*: If powershell is blocking/disabling the virtual environment from being activated, run this line and then try the steps again:
     Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ## Current Update
