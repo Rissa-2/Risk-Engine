@@ -66,3 +66,27 @@ probabilistic-risk-engine/
 │   ├── First steps suggestions
 │   └── Attributes
 ```
+
+## Enviornment Set Up Instructions
+### Create the environment: 
+    python -m venv .venv
+
+### Activate it:
+    .venv\Scripts\Activate.ps1
+(.venv) should be at the start of all your prompts in the terminal now
+
+### Install the needed packages:
+    python -m pip install --upgrade pip
+    pip install numpy pandas scipy scikit-learn matplotlib joblib ipykernel
+
+### OR 
+
+### Install the packages using requirements.txt: 
+    pip install -r requirements.txt
+    
+The XGBoost package still needs to be installed. \
+*Side note*: If powershell is blocking/disabling the virtual environment from being activated, run this line and then try the steps again:
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+## Current Update
+The code properly loads everything from the dataset now! There is a text in load_data.py to make sure of this, so when you run the code it should give back the number of rows and columns in both the train and test datasets, and give a percentage or how many would be considered "normal" or "anomaly". (Shows up as a decimal, should be around 47%)
