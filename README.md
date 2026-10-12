@@ -72,7 +72,8 @@ probabilistic-risk-engine/
     python -m venv .venv
 
 ### Activate it:
-    .venv\Scripts\Activate.ps1
+    Windows: .venv\Scripts\Activate.ps1
+    MacOS: source .venv/bin/activate
 (.venv) should be at the start of all your prompts in the terminal now
 
 ### Install the needed packages:

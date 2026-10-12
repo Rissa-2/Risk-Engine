@@ -1,3 +1,4 @@
+# Tati
 Commit 1:
 load_data.py:
     Created file that loads the data from the ARFF datasets.
@@ -10,3 +11,13 @@ load_data.py:
 
 Commit 3:
 load
+
+# Taylor
+Risk-Engine/src/data/load_data.py
+Function: load_arff 
+- Imports data file as bytes and converts to strings
+
+Function: load_nsl_kdd
+- taking train and test tables, and filtering if its classified as an anomaly or not
+
+# Karissa
