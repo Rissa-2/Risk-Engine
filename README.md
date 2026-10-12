@@ -83,3 +83,5 @@ Everything should be set up, HOWEVER i believe that the XGBoost package still ne
 *Side note*: If powershell is blocking/disabling the virtual environment from being activated, run this line and then try the steps again:
     Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
+## Current Update
+The code properly loads everythingfrom the dataset now! There is a text in load_data.py to make sure of this, so when you run the code it should give back the number of rows and columns in both the train and test datasets, and give a percentage or how many would be considered "normal" or "anomaly". (Shows up as a decimal, should be around 47%)

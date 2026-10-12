@@ -5,6 +5,7 @@
 from pathlib import Path
 import pandas as pd
 from scipy.io import arff
+import io
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "raw" / "NSL-KDD_Datasets"  
 # project_root/data
@@ -20,7 +21,7 @@ def load_arff(path):
         for line in lines 
         #Working on adding this part in so that the program doesn't read the spaces after the commas, because that causes an error while loading the data (scipy rejecting)
     ]
-    data, _ = arff.loadarff(path)
+    data, _ = arff.loadarff(io.StringIO("\n".join(fixed)))
     df = pd.DataFrame(data)
     for c in df.select_dtypes(include="object").columns:
         df[c] = df[c].str.decode("utf-8")   # ARFF nominals load as bytes
