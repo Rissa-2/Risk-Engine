@@ -15,7 +15,6 @@ print(DATA_DIR.exists()) #Making sure the file exists
 def load_arff(path):
     with open(path, encoding="utf-8") as f:
         lines = f.read().splitlines()
-    # NSL-KDD headers have spaces after commas in value lists, which scipy rejects
     fixed = [
         line.replace(", ", ",") if line.lower().startswith("@attribute") else line
         for line in lines 
