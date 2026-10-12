@@ -75,6 +75,9 @@ Activate it:
     .venv\Scripts\Activate.ps1
 (.venv) should be at the start of all your prompts in the terminal now
 Install the needed packages:
+    python -m pip install --upgrade pip
+    pip install numpy pandas scipy scikit-learn matplotlib joblib ipykernel
+If the branch gets merged in time, you can use this to install the packages instead:
     pip install -r requirements.txt
 Everything should be set up, HOWEVER i believe that the XGBoost package still needs to be installed
 *Side note*: If powershell is blocking/disabling the virtual environment from being activated, run this line and then try the steps again:
