@@ -1,6 +1,20 @@
 # What columns/features will the model receive? 
 
 ## KDDTrain+.arff
+
+```python
+numeric = [
+    "wrong_fragment", "num_failed_logins", "num_compromised",
+    "num_shells", "srv_count", "serror_rate", "rerror_rate",
+    "same_srv_rate", "dst_host_srv_count", "dst_host_same_srv_rate",
+    "dst_host_same_src_port_rate", "dst_host_serror_rate" "dst_host_srv_serror_rate",
+]
+
+categorical = [
+    "flag", "land", "is_host_login",
+]
+```
+
 | Attribute | Line | Description |
 |----|---|-------|
 | flag | line 5 | connetions the computers send to eacch other |
