@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransfo
 from sklearn.pipeline import Pipeline
 from src.data.load_data import numeric, categorical
 
-skewed = ["duration", "src_bytes", "dst_bytes", "count", "srv_count"]
+skewed = ["num_compromised", "num_shells", "wrong_fragment", "num_failed_logins", "srv_count"]
 other  = [c for c in numeric if c not in skewed]
 
 prep = ColumnTransformer([
