@@ -37,19 +37,3 @@ def load_nsl_kdd():
         d["y"] = (d["class"] != "normal").astype(int)   # 1 = malicious
     return train, test
 
-if __name__ == "__main__":
-    train, test = load_nsl_kdd()
-    ## Print tables
-    ## print("Training table:")
-    ## print(train)
-    ## print("\nTest table:")
-    ## print(test)
-    print(train.shape, test.shape)
-    print(train["y"].mean())
-
-#This part incorporates all the attirbutes we will be using. It's just our baseline data for now. We will be adding more later.
-numeric = ["wrong_fragment", "num_failed_logins", "num_compromised",
-    "num_shells", "srv_count", "serror_rate", "rerror_rate",
-    "same_srv_rate", "dst_host_srv_count", "dst_host_same_srv_rate",
-    "dst_host_same_src_port_rate", "dst_host_serror_rate" "dst_host_srv_serror_rate",]
-categorical = ["flag", "land", "is_host_login"]
