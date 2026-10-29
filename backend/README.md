@@ -17,4 +17,4 @@
     pip install -r requirements.txt
 
 # Launch API server
-    uvicorn app.main:app --reload
+    uvicorn backend.app.main:app --reload
